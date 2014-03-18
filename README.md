@@ -1,5 +1,7 @@
 # BoxerJS (a jquery modal library built for developers)
 
+https://travis-ci.org/renatodex/javascript-boxer.png
+
 You may say: OMG ANOTHER JAVASCRIPT MODAL LIBRARY, TAKE A BREATH WHILE I SUICIDE MYSELF IN A COCA COLA CUP.
 Yes, you are right, its just another guy, but i can surely say that 90% of all javascript modal libraries IN THE WORLD are not covered by unit tests.
 Its not a difficult thing to be covered, but good things, have tests. Unit Tests.
