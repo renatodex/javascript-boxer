@@ -14,7 +14,7 @@ I dont wanted a CSS library, i wanted a Javascript library.
 
 This mindset is important, because it breaks things appart. You start doing things well when you learn to break things.
 
-I know, doesnt matter what kind of logic, structural or practical errors you find on my library, im not a perfect coder, but i built the mindset. Thats the point.
+I know, doesn't matter what kind of logic, structural or practical errors you find on my library, im not a perfect coder, but i built the mindset. Thats the point.
 
 ## How to use
 
