@@ -6,7 +6,7 @@ You may say: OMG ANOTHER JAVASCRIPT MODAL LIBRARY, TAKE A BREATH WHILE I SUICIDE
 Yes, you are right, its just another guy, but i can surely say that 90% of all javascript modal libraries IN THE WORLD are not covered by unit tests.
 Its not a difficult thing to be covered, but good things, have tests. Unit Tests.
 
-I also want to say that 90% of all javascript modal libraries IN THE WORLD are binded by CSS rules and Images.
+I also want to say that 90% of all javascript modal libraries IN THE WORLD are binded by CSS rules and Images..
 I was tired of this binding thing, and i wanted something that i could use everywhere, regardless of what kind of CSS rules i was setting, and what kind of images iam loading.
 
 Boxer does not let it explicit for you. It assumes that your a good developer and you know how to create the classic Modal centered effect.
