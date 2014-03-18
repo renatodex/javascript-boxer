@@ -18,10 +18,10 @@ I know, doesnt matter what kind of logic, structural or practical errors you fin
 
 Its logical, how it should be.
 
-1) Instantiate the class.
-2) Set the Background div (the black one)
-3) Set the content div (the white box with content inside)
-4) Show everything
+1. Instantiate the class.
+2. Set the Background div (the black one)
+3. Set the content div (the white box with content inside)
+4. Show everything
 
 ```javascript
 var bjs = new Boxer;
