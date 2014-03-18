@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Javascript-boxer by renatodex</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Javascript-boxer</h1>
+        <h2>A javascript modal library built for developers</h2>
+        <a href="https://github.com/renatodex/javascript-boxer" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="boxerjs-a-jquery-modal-library-built-for-developers" class="anchor" href="#boxerjs-a-jquery-modal-library-built-for-developers"><span class="octicon octicon-link"></span></a>BoxerJS (a jquery modal library built for developers)</h1>
+
+<p>You may say: OMG ANOTHER JAVASCRIPT MODAL LIBRARY, TAKE A BREATH WHILE I SUICIDE MYSELF IN A COCA COLA CUP.
+Yes, you are right, its just another guy, but i can surely say that 90% of all javascript modal libraries IN THE WORLD are not covered by unit tests.
+Its not a difficult thing to be covered, but good things, have tests. Unit Tests.</p>
+
+<p>I also want to say that 90% of all javascript modal libraries IN THE WORLD are binded by CSS rules and Images.
+I was tired of this binding thing, and i wanted something that i could use everywhere, regardless of what kind of CSS rules i was setting, and what kind of images iam loading.</p>
+
+<p>Boxer does not let it explicit for you. It assumes that your a good developer and you know how to create the classic Modal centered effect.
+I dont wanted a CSS library, i wanted a Javascript library.</p>
+
+<p>This mindset is important, because it breaks things appart. You start doing things well when you learn to break things.</p>
+
+<p>I know, doesnt matter what kind of logic, structural or practical errors you find on my library, im not a perfect coder, but i built the mindset. Thats the point.</p>
+
+<h2>
+<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use</h2>
+
+<p>Its logical, how it should be.</p>
+
+<ol>
+<li>Instantiate the class.</li>
+<li>Set the Background div (the black one)</li>
+<li>Set the content div (the white box with content inside)</li>
+<li>Show everything</li>
+</ol><div class="highlight highlight-javascript"><pre><span class="kd">var</span> <span class="nx">bjs</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Boxer</span><span class="p">;</span>
+<span class="nx">bjs</span><span class="p">.</span><span class="nx">setBackground</span><span class="p">(</span><span class="s1">'.test-bg'</span><span class="p">)</span>
+<span class="nx">bjs</span><span class="p">.</span><span class="nx">setContent</span><span class="p">(</span><span class="s1">'.register-cta-content'</span><span class="p">)</span>     
+<span class="nx">bjs</span><span class="p">.</span><span class="nx">show</span><span class="p">()</span>
+</pre></div>
+
+<p>Its still very raw, you will see that by doing this, you will not be able to close the modal, you asked for a modal, thats what you got, theres no default closing button, theres no default border radius, theres simply no default.</p>
+
+<h2>
+<a name="make-the-modal-closeable" class="anchor" href="#make-the-modal-closeable"><span class="octicon octicon-link"></span></a>Make the modal Closeable</h2>
+
+<p>If you want to make the modal closeable, theres a guy for it:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">bjs</span><span class="p">.</span><span class="nx">getBackground</span><span class="p">().</span><span class="nx">closeable</span><span class="p">();</span>
+</pre></div>
+
+<p>Just call it before showing, and you will be abble to close the modal by clicking on the background.</p>
+
+<h2>
+<a name="creating-the-classic-modal-close-button" class="anchor" href="#creating-the-classic-modal-close-button"><span class="octicon octicon-link"></span></a>Creating the classic Modal Close button</h2>
+
+<p>Oh right, dont panic. If you want to create a close button, all you need is to keep the Boxer instance somewhere, in which way you could call it after modal is opened.
+When you do it, just call:</p>
+
+<div class="highlight highlight-javascript"><pre><span class="nx">bjs</span><span class="p">.</span><span class="nx">hide</span><span class="p">();</span>
+</pre></div>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>It basic jQuery manipulation to grab the DOM reference and do the append proccess.
+jQuery 1.7+ should do the trick. </p>
+
+<h2>
+<a name="known-issues" class="anchor" href="#known-issues"><span class="octicon octicon-link"></span></a>Known issues</h2>
+
+<ol>
+<li>Actually, Boxer modules are global variables, its bad and ugly, but i had no time to fix it.</li>
+<li>Theres also no check for the jQuery variable and its using the global instance of $ var, which is very ugly too.</li>
+<li>Its a bit difficult to open the modal, because it requires 4 lines of code, there should a way to make it smarter without messing or binding everything.</li>
+<li>Theres no jslint validation, i should do it, probably there are several issues.</li>
+</ol><p>Problably more..i just built it in a few hours, but had not bug ever since.</p>
+
+<h2>
+<a name="contact" class="anchor" href="#contact"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>My name is Renato Alves (<a href="mailto:renatodex@gmail.com">renatodex@gmail.com</a>), and im the only developer behind BoxerJS.
+I would love to gather help to improve the library, i made this based on a very ancient question on webdeveloper world, which is : What Lightbox system should i use for my project?
+I dont know you, but today i have a clearly answer for that question.
+Any questions, any critics, any any, just mail me, im still alive since the last commit of this repository.</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/renatodex/javascript-boxer/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/renatodex/javascript-boxer/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/renatodex/javascript-boxer"></a> is maintained by <a href="https://github.com/renatodex">renatodex</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
