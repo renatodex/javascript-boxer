@@ -23,7 +23,7 @@ Its logical, how it should be.
 3) Set the content div (the white box with content inside)
 4) Show everything
 
-```
+```javascript
 var bjs = new Boxer;
 bjs.setBackground('.test-bg')
 bjs.setContent('.register-cta-content')		
@@ -36,7 +36,7 @@ Its still very raw, you will see that by doing this, you will not be able to clo
 
 If you want to make the modal closeable, theres a guy for it:
 
-```
+```javascript
 bjs.getBackground().closeable();
 ```
 
@@ -47,7 +47,7 @@ Just call it before showing, and you will be abble to close the modal by clickin
 Oh right, dont panic. If you want to create a close button, all you need is to keep the Boxer instance somewhere, in which way you could call it after modal is opened.
 When you do it, just call:
 
-```
+```javascript
 bjs.hide();
 ```
 
