@@ -7,8 +7,6 @@ node_js:
   - "0.6"
   
 before_script:
-  - sudo npm install -g grunt-cli
-  - sudo npm install -g bower
-  - sudo npm install
+  - npm install
 
 script: grunt --verbose --force
